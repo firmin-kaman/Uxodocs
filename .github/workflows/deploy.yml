@@ -3,6 +3,7 @@ name: Deploy to GitHub Pages (docusaurus branch)
 on:
   push:
     branches:
+      - gh-pages
       - docusaurus
 
 permissions:

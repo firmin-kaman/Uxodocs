@@ -14,7 +14,7 @@ const config: Config = {
 
   organizationName: 'firmin-kaman',
   projectName: 'Uxodocs',
-  deploymentBranch: 'docusaurus',
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
