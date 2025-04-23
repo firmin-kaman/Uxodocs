@@ -9,8 +9,8 @@ const config: Config = {
   tagline: 'Documentation UXOPIAN',
   favicon: 'img/favicon.ico',
 
-  url: 'https://your-docusaurus-site.example.com',
-  baseUrl: '/',
+  url: 'https://firmin-kaman.github.io/',
+  baseUrl: '/Uxodocs/',
 
   organizationName: 'uxopian',
   projectName: 'uxodocs',
