@@ -52,3 +52,27 @@
     color: #000000;
   }
 }
+
+/* Corriger l'empilement des dropdowns de version sur petits écrans */
+@media (max-width: 996px) {
+  .navbar__item--docs-version {
+  margin-right: 8.5rem;
+}
+}
+/* Sur les petits écrans (tablette et mobile) */
+@media (max-width: 996px) {
+  .navbar__items--right {
+    flex-wrap: wrap;
+  }
+
+  .navbar__item--docs-version {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar__search {
+    display: flex;
+    align-items: center;
+  }
+  
+}

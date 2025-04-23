@@ -2,15 +2,19 @@
 import React from 'react';
 import OriginalDropdown from '@theme-original/NavbarItem/DocsVersionDropdownNavbarItem';
 import { useLocation } from '@docusaurus/router';
+import { useBaseUrlUtils } from '@docusaurus/useBaseUrl';
 
 export default function DocsVersionDropdownNavbarItemWrapper(props) {
-  const { docsPluginId } = props; 
+  const { docsPluginId } = props;
   const { pathname } = useLocation();
+  const { withBaseUrl } = useBaseUrlUtils();
 
-  // Only render if the current URL path includes the product's route (docsPluginId)
-  const isInSection = pathname.startsWith(`/${docsPluginId}/`);
+  const sectionPath = withBaseUrl(`/${docsPluginId}/`);
+  const isInSection = pathname.startsWith(sectionPath);
+
   if (!isInSection) {
-    return null;  // do not display the dropdown
+    return null;
   }
-  return <OriginalDropdown {...props} />;
+
+  return <OriginalDropdown  class="navbar__item navbar__link navbar__item--docs-version"  {...props} />;
 }
