@@ -1,0 +1,54 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #c46ee0; /* Violet principal */
+  --ifm-color-primary-dark: #873ab7;
+  --ifm-color-primary-darker: #762aa3;
+  --ifm-color-primary-darkest: #65198f;
+  --ifm-color-primary-light: #b35ed6;
+  --ifm-color-primary-lighter: #c46ee0;
+  --ifm-color-primary-lightest: #d57eeb;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(155, 77, 202, 0.1);
+
+  /* Typos */
+  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-font-family-headings: 'Jost', sans-serif;
+  --ifm-heading-font-weight: 600;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+
+[data-theme='dark'] {
+  --ifm-color-primary: #d57eeb ; /* Violet clair pour le mode sombre */
+  --ifm-color-primary-dark: #c46ee0;
+  --ifm-color-primary-darker: #b35ed6;
+  --ifm-color-primary-darkest: #a34ecc;
+  --ifm-color-primary-light: #e68ef5;
+  --ifm-color-primary-lighter: #f79eff;
+  --ifm-color-primary-lightest: #ffaaff;
+  --docusaurus-highlighted-code-line-bg: rgba(213, 126, 235, 0.1);
+}
+/* src/css/custom.css */
+
+.navbar__item.dropdown {
+  display: flex !important;
+}
+.footer {
+ background-color: #c46ee0
+}
+.footer__copyright {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .footer {
+  background-color: #d57eeb;
+  .footer__copyright {
+    color: #000000;
+  }
+}
