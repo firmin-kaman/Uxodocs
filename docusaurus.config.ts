@@ -12,8 +12,9 @@ const config: Config = {
   url: 'https://firmin-kaman.github.io/',
   baseUrl: '/Uxodocs/',
 
-  organizationName: 'uxopian',
-  projectName: 'uxodocs',
+  organizationName: 'firmin-kaman',
+  projectName: 'Uxodocs',
+  deploymentBranch: 'docusaurus',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -183,7 +184,7 @@ const config: Config = {
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
         hashed: true,
-        language: ["fr"], // ou ["en", "fr"] si ton site est multilingue
+        language: ["en", "fr", "es"], // ou ["en", "fr"] si ton site est multilingue
       },
     ],
   ],
