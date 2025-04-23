@@ -184,10 +184,6 @@ const config: Config = {
       {
         hashed: true,
         language: ["fr"], // ou ["en", "fr"] si ton site est multilingue
-        docsRouteBasePath: '/',
-        indexBlog: false,
-        searchBarPosition: 'right',
-        // autres options selon tes besoins
       },
     ],
   ],
